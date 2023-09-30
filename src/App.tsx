@@ -1,6 +1,12 @@
-import { MainPage } from './Pages/mainPage'
+import { Outlet } from 'react-router-dom'
+import { Header } from './components/header'
 
 export default function App() {
-  const teste = 1022
-  return <MainPage numero={teste} />
+  return (
+    <>
+      <Header />
+      <Outlet />
+      <p>Footer</p>
+    </>
+  )
 }
