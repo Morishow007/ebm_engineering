@@ -1,5 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom'
 import App from '../App'
+import { ROUTES } from '../constants/routes'
 import { About } from '../pages/About'
 import { AboutDetails } from '../pages/About/AboutDetails'
 import { ErrorPage } from '../pages/Error'
@@ -13,15 +14,15 @@ export const Routes = () => {
       errorElement: <ErrorPage />,
       children: [
         {
-          path: '/',
+          path: ROUTES.landingPage.path,
           element: <LandingPage />,
         },
         {
-          path: '/about',
+          path: ROUTES.about.path,
           element: <About />,
         },
         {
-          path: '/about/:id',
+          path: ROUTES.aboutDetails.path,
           element: <AboutDetails />,
         },
       ],
