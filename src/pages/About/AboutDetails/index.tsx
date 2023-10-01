@@ -1,4 +1,5 @@
 import { useNavigate, useParams } from 'react-router-dom'
+import { ROUTES } from '../../../constants/routes'
 import { SendMessagebutton } from '../style'
 
 export const AboutDetails = () => {
@@ -7,7 +8,7 @@ export const AboutDetails = () => {
 
   const handleClick = () => {
     console.log('mensagem enviada')
-    navigate('/')
+    navigate(ROUTES.landingPage.path)
   }
   return (
     <>
