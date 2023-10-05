@@ -1,0 +1,26 @@
+.mainContainer {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  flex-direction: column;
+}
+
+.section-container-content {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}

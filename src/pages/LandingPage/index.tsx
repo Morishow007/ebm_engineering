@@ -1,7 +1,13 @@
+import '../../Styles/Global.css'
+import { HeadSection } from './HeadSection'
+import { MiddleSection } from './MiddleSection'
+import './style.css'
+
 export const LandingPage = () => {
   return (
     <>
-      <h2>LANDING PAGE</h2>
+      <HeadSection />
+      <MiddleSection />
     </>
   )
 }
