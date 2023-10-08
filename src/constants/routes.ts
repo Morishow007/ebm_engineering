@@ -10,4 +10,8 @@ export const ROUTES = {
   aboutDetails: {
     path: '/about/:id',
   },
+
+  contactUs: {
+    path: '/contact',
+  },
 } as const

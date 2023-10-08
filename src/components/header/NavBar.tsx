@@ -17,14 +17,10 @@ export const NavBar = () => {
           <Link to={ROUTES.landingPage.path}>Home</Link>
         </li>
         <li>
-          <Link to={ROUTES.about.path}>About</Link>
+          <Link to={ROUTES.about.path}>Produtos e Serviços</Link>
         </li>
         <li>
-          {/* Change routes to the correct pages */}
-          <Link to="/contact">Services</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
+          <Link to={ROUTES.contactUs.path}>Contact</Link>
         </li>
       </ul>
       <div className="navbar-search">
