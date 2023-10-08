@@ -1,13 +1,13 @@
 import '../../Styles/Global.css'
 import { HeadSection } from './HeadSection'
-import { MiddleSection } from './MiddleSection'
+import { PresentationSection } from './PresentationSection'
 import './style.css'
 
 export const LandingPage = () => {
   return (
     <>
       <HeadSection />
-      <MiddleSection />
+      <PresentationSection />
     </>
   )
 }

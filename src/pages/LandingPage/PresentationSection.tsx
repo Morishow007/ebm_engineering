@@ -1,8 +1,8 @@
-export const MiddleSection = () => {
+export const PresentationSection = () => {
   return (
     <div className="mainContainer" style={{ backgroundColor: '#f3f1f1' }}>
       <div className="section-container-content">
-        <div className="mid-section-container">
+        <div className="presentation-section-container">
           <div className="column-half">
             <img src="https://media.licdn.com/dms/image/C4D03AQE8qbiKQqw2fQ/profile-displayphoto-shrink_800_800/0/1603049633499?e=1701907200&v=beta&t=m3iznSO1Y8doeR8LttcFC3N1FMOoI_yiyDRZuROdd2Q" />
           </div>

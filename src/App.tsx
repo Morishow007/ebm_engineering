@@ -1,11 +1,11 @@
 import { Outlet } from 'react-router-dom'
 import './Styles/Global.css'
-import { Header } from './components/header'
+import { NavBar } from './components/header/NavBar'
 export default function App() {
   return (
     <>
-      <Header />
       <div className="mainContainer">
+        <NavBar />
         <Outlet />
       </div>
       <p>Footer</p>
