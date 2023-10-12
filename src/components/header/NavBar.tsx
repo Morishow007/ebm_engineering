@@ -1,6 +1,6 @@
 import '../../Styles/Navbar.css'
 
-import NavLinks from './links'
+import NavLinks from './NavLinks'
 import Logo from './logo'
 
 export const NavBar = () => {

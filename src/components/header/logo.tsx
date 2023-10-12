@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { ROUTES } from '../../constants/routes'
 
-import logo from '../../components/header/EBM_logo.png'
+import logo from '../../components/header/assets/images/EBM_logo.png'
 
 const Logo = () => {
   return (
