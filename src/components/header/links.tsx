@@ -8,7 +8,7 @@ const NavLinks = () => {
         <Link to={ROUTES.landingPage.path}>Home</Link>
       </li>
       <li>
-        <Link to={ROUTES.about.path}>Produtos e Serviços</Link>
+        <Link to={ROUTES.about.path}>Sobre</Link>
       </li>
       <li>
         <Link to={ROUTES.contactUs.path}>Contact</Link>
