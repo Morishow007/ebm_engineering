@@ -1,0 +1,30 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-container img {
+  width: 100%;
+  height: 370px; 
+  object-fit: cover; 
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px; 
+}
+
+.message-container {
+  flex: 1;
+  margin: 0 10px;
+  background-color: darkgray;
+}
+
+.engineer-contact {
+  flex: 1;
+  margin: 0 10px; 
+  border: 2px solid;
+  border-color: darkgrey;
+}
