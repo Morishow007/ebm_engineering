@@ -17,7 +17,7 @@
 /* Logo Styles */
 
 .navbar-logo img {
-  max-width: 100px;
+  max-width: 60%;
 }
 
 /* Menu Syles */
@@ -55,4 +55,10 @@
 /* Styling for the scrolling effect */
 .navbar.scrolling {
   background-color: #FFF;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  width: 80%;
 }

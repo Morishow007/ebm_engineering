@@ -8,10 +8,12 @@ export const NavBar = () => {
 
   return (
     <nav className={`navbar ${scrolling ? 'scrolling' : ''}`}>
-      <div className="navbar-logo">
-        <Logo />
+      <div className="navbar-container">
+        <div className="navbar-logo">
+          <Logo />
+        </div>
+        <NavLinks />
       </div>
-      <NavLinks />
     </nav>
   )
 }
