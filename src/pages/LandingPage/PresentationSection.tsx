@@ -1,22 +1,18 @@
+import { i18n } from '../../constants/strings'
+
 export const PresentationSection = () => {
   return (
-    <div className="mainContainer" style={{ backgroundColor: '#f3f1f1' }}>
+    <div className="mainContainer lightBackground">
       <div className="section-container-content">
         <div className="presentation-section-container">
-          <div className="column-half">
-            <img src="https://media.licdn.com/dms/image/C4D03AQE8qbiKQqw2fQ/profile-displayphoto-shrink_800_800/0/1603049633499?e=1701907200&v=beta&t=m3iznSO1Y8doeR8LttcFC3N1FMOoI_yiyDRZuROdd2Q" />
+          <div className="column-profile">
+            <img
+              src="https://csb100320033953e5ba.blob.core.windows.net/assets/profileEduardo.png?sp=r&st=2024-01-05T11:53:03Z&se=2025-05-01T18:53:03Z&spr=https&sv=2022-11-02&sr=b&sig=FQfH5TuB6DT8vpEudNh3EmnfFV7J85o%2FEX%2FqC%2FGhQhw%3D"
+              alt="profile picture"
+            />
           </div>
           <div className="column-half">
-            <p>
-              EDUARDO MOREIRA Engenheiro Civil, pós-graduado em Engenharia de
-              Segurança do Trabalho, Técnico em Desenvolvimento de Software e
-              Instrumentista Montador. Atuante desde 2012 na construção civil,
-              envolvendo obras como Minha Casa Minha Vida, Shopping Partage,
-              Novo Fórum de Rio Grande. Atuante também dentro da indústria em
-              empresas como Yara, TECON, OGMO e ECOVIX. A partir de 2018 atuante
-              no projeto e execução residencial, laudos técnicos, perícias,
-              reformas e regularização de imóveis.
-            </p>
+            <p>{i18n.presentationPage.profileEduardo}</p>
           </div>
         </div>
       </div>

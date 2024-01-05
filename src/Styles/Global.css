@@ -4,6 +4,11 @@
   height: auto;
   margin: auto;
   flex-direction: column;
+  background-color: white;
+}
+
+.mainContainer.lightBackground {
+  background-color: #f3f1f1;
 }
 
 .section-container-content {
