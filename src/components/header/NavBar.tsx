@@ -7,8 +7,8 @@ export const NavBar = () => {
   const scrolling = ScrollEffect()
 
   return (
-    <nav className={`navbar ${scrolling ? 'scrolling' : ''}`}>
-      <div className="navbar-container">
+    <nav className={'navbar'}>
+      <div className={`navbar-container ${scrolling ? 'scrolling' : ''}`}>
         <div className="navbar-logo">
           <Logo />
         </div>

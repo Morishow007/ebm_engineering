@@ -10,7 +10,6 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-  padding: 20px;
   background-color: transparent;
 }
 
@@ -54,11 +53,20 @@
 
 /* Styling for the scrolling effect */
 .navbar.scrolling {
-  background-color: #FFF;
+  background-color: white;
+  border-radius: 20%;
+
 }
 
 .navbar-container {
   display: flex;
   align-items: center;
   width: 80%;
+  padding: 0 20px 0 20px;
+}
+
+.navbar-container.scrolling {
+  background-color: white;
+  border-radius: 20px;
+
 }
