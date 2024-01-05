@@ -12,7 +12,7 @@
   width: 100%;
   margin: auto;
   height: 50vw;
-  background-image: url('https://lh3.googleusercontent.com/p/AF1QipMjsA-dGk05PGVgWSDtuoz37O3FwlbbBKJvaKc4=w1080-h608-p-no-v0');
+  background-image: url('../../images/casa1.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -30,15 +30,15 @@
 
 @keyframes changeBg {
   0% {
-    background-image: url('https://lh3.googleusercontent.com/p/AF1QipMjsA-dGk05PGVgWSDtuoz37O3FwlbbBKJvaKc4=w1080-h608-p-no-v0');
+    background-image: url('../../images/casa2.jpg');
   }
 
   33% {
-    background-image: url('https://img.freepik.com/fotos-gratis/plano-de-abertura-do-arquiteto-de-colheita_23-2147710985.jpg?w=1380&t=st=1696519535~exp=1696520135~hmac=ec464cf2a4fae91952414337e6fe52a9fb6b2736f124b94fa56465a388958682');
+    background-image: url('../../images/casa1.jpg');
   }
 
   66% {
-    background-image: url('https://images.unsplash.com/photo-1485083269755-a7b559a4fe5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80');
+    background-image: url('../../images/casa4.png');
   }
 
   /* 100% {
