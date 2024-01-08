@@ -18,8 +18,8 @@
 /* Logo Styles */
 
 .navbar-logo img {
-  max-width: 20%;
-  width: auto;
+  max-width: 100%;
+  width: 160px;
   height: auto
 }
 
