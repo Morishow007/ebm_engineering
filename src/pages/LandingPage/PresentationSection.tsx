@@ -34,7 +34,9 @@ export const PresentationSection = () => {
               {/* Left Arrow */}
               <div className="px-4">
                 <button
-                  className="flex-shrink-0 hidden w-16 h-16 mr-2  text-gray-700 bg:#e5e7eb border-2 lg:block hover:bg-blue-300 rounded-full"
+                  // eslint-disable-next-line prettier/prettier
+                  className={`flex-shrink-0 hidden w-16 h-16 mr-2  text-gray-700 bg:#e5e7eb border-2 lg:block  rounded-full hover:${profileIndex === 0 ? 'bg-transparent' : 'bg-blue-300'}`}
+                  disabled={profileIndex === 0}
                   onClick={handlePrevious}
                 >
                   <svg
@@ -57,7 +59,9 @@ export const PresentationSection = () => {
               {/* Right Arrow */}
               <div className="px-4">
                 <button
-                  className="flex-shrink-0 hidden w-16 h-16 ml-2 text-gray-700 bg:#e5e7eb border-2 lg:block hover:bg-blue-300 rounded-full"
+                  // eslint-disable-next-line prettier/prettier
+                  className={`flex-shrink-0 hidden w-16 h-16 ml-2 text-gray-700 bg:#e5e7eb border-2 lg:block hover:${profileIndex < profiles.length - 1 ? 'bg-blue-300' : 'bg-transparent'} rounded-full`}
+                  disabled={profileIndex === profiles.length - 1}
                   onClick={handleNext}
                 >
                   <svg
@@ -80,7 +84,7 @@ export const PresentationSection = () => {
             <div className="items-center justify-center hidden lg:flex">
               {profiles.map((item) => (
                 <button
-                  key={item.title}
+                  key={item.name}
                   className="inline-block w-3 h-3 mr-10 bg-blue-500"
                 ></button>
               ))}
