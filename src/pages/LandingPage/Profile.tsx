@@ -1,9 +1,14 @@
 import profileEduardo from '../../images/profileEduardo.png'
 
-export const Profile = () => {
+type Props = {
+  name?: string
+  imgSrc?: string
+  description?: string
+}
+
+export const Profile = ({ description, imgSrc, name }: Props) => {
   return (
     <>
-      {' '}
       <div className="bg-white rounded">
         <div className="flex flex-wrap -mx-4">
           <div className="w-full px-12 py-10 lg:w-3/5 lg:px-4 lg:mb-0 lg:py-20">

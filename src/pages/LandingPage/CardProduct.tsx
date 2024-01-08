@@ -17,7 +17,7 @@ export const CardProduct = ({ description, title }: Props) => {
         <a href="">
           <div className="absolute bottom-0 w-full h-20 group-hover:h-44 bg-black bg-opacity-50 transition-opacity flex items-top justify-center group">
             <div className="container mx-auto px-4 pt-4 pb-2  text-white">
-              <div className="font-bold text-xl mb-2">{title}</div>
+              <div className="font-bold text-xl mb-2 text-center">{title}</div>
               <p className="max-w-prose invisible  group-hover:visible">
                 {description}
               </p>
