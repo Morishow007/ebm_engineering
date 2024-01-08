@@ -5,10 +5,15 @@
   margin: auto;
   flex-direction: column;
   background-color: white;
+  overflow-x: hidden;
 }
 
 .mainContainer.lightBackground {
   background-color: #f3f1f1;
+}
+
+.mainContainer.darkerBackground {
+  background-color: #4F4A45;
 }
 
 .section-container-content {

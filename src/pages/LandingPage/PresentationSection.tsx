@@ -16,6 +16,18 @@ export const PresentationSection = () => {
           </div>
         </div>
       </div>
+      <div className="section-container-content">
+        <div className="presentation-section-container">
+          <div className="column-half">
+            <p>{t('presentationPage.profileEduardo')}</p>
+          </div>
+          <div className="column-profile">
+            <div className="profile-picture">
+              <img src={profile} alt="profile picture" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
