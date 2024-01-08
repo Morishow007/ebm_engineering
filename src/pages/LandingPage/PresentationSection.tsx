@@ -1,12 +1,29 @@
-import { Profile } from './Profile'
+import { useEffect, useState } from 'react'
+import { Profiles } from './Profiles'
+import { Profile, retrieveProfiles } from './utils'
 
 export const PresentationSection = () => {
+  const [currentProfile, setCurrentProfile] = useState<Profile>()
+  const [profileIndex, setProfileIndex] = useState(0)
+  const profiles = retrieveProfiles()
+
   const handleNext = () => {
-    console.log('next')
+    if (profileIndex < profiles.length - 1) {
+      setProfileIndex((prevIndex) => prevIndex + 1)
+      setCurrentProfile(profiles[profileIndex + 1])
+    }
   }
   const handlePrevious = () => {
-    console.log('previous')
+    if (profileIndex > 0) {
+      setProfileIndex((prevIndex) => prevIndex - 1)
+      setCurrentProfile(profiles[profileIndex - 1])
+    }
   }
+
+  useEffect(() => {
+    setCurrentProfile(profiles[0])
+  }, [])
+
   return (
     <div className="mainContainer lightBackground">
       <div className="section-container-content">
@@ -35,8 +52,8 @@ export const PresentationSection = () => {
                   </svg>
                 </button>
               </div>
-              {/* Profile Section (extract) */}
-              <Profile />
+              {/* Profile Section */}
+              <Profiles profile={currentProfile} />
               {/* Right Arrow */}
               <div className="px-4">
                 <button
@@ -59,10 +76,14 @@ export const PresentationSection = () => {
                 </button>
               </div>
             </div>
-            {/* Bottom */}
+            {/* Bottom (extract button to a component to handle state) */}
             <div className="items-center justify-center hidden lg:flex">
-              <button className="inline-block w-3 h-3 mr-10 bg-blue-500"></button>
-              <button className="inline-block w-1 h-1 mr-10 bg-blue-300 rounded-full"></button>
+              {profiles.map((item) => (
+                <button
+                  key={item.title}
+                  className="inline-block w-3 h-3 mr-10 bg-blue-500"
+                ></button>
+              ))}
             </div>
           </div>
         </section>

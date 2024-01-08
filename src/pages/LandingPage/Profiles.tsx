@@ -1,27 +1,24 @@
-import profileEduardo from '../../images/profileEduardo.png'
+import { Profile } from './utils'
 
 type Props = {
-  name?: string
-  imgSrc?: string
-  description?: string
+  profile?: Profile
 }
 
-export const Profile = ({ description, imgSrc, name }: Props) => {
+export const Profiles = ({ profile }: Props) => {
   return (
     <>
       <div className="bg-white rounded">
         <div className="flex flex-wrap -mx-4">
           <div className="w-full px-12 py-10 lg:w-3/5 lg:px-4 lg:mb-0 lg:py-20">
             <div className="mx-auto lg:max-w-md">
-              <span className="text-blue-400">Engenheiro Civil</span>
+              <span className="text-blue-400">{profile?.title}</span>
               <h2 className="mt-2 mb-6 text-4xl font-bold text-gray-800 ">
-                Eduardo Moreira
+                {profile?.name}
               </h2>
               <p className="mb-6 text-lg text-gray-500 ">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque massa nibh, pulvinar vitae aliquet nec, accumsan
-                aliquet orci.
+                {profile?.description}
               </p>
+              {/* Social Media */}
               <div className="flex items-center ">
                 <a
                   className="inline-flex items-center justify-center w-12 h-12 mr-4 text-blue-700  bg-white"
@@ -75,7 +72,7 @@ export const Profile = ({ description, imgSrc, name }: Props) => {
             <div className="h-full mb-12 lg:mb-0">
               <img
                 className="object-cover w-full h-full rounded"
-                src={profileEduardo}
+                src={profile?.imgSrc}
                 alt=""
               />
             </div>
